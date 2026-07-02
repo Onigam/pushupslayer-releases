@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PushUpSlayer — Télécharger</title>
+<style>
+  :root {
+    --bg: #0A0612; --surface: #171021; --crimson: #D22B3A;
+    --gold: #E8B54D; --bone: #EDE4D3; --ash: #9A8FA8; --venom: #86D93C;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: radial-gradient(ellipse at 50% -20%, #221336 0%, var(--bg) 55%, #060309 100%);
+    color: var(--bone); min-height: 100vh;
+    display: flex; align-items: center; justify-content: center; padding: 24px;
+  }
+  .card {
+    max-width: 480px; width: 100%; text-align: center;
+    background: linear-gradient(160deg, #241933, var(--surface));
+    border: 1px solid rgba(232,181,77,0.25); border-radius: 20px;
+    padding: 40px 28px; box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  }
+  .icon { font-size: 56px; filter: drop-shadow(0 0 18px rgba(210,43,58,0.8)); }
+  h1 { letter-spacing: 3px; margin: 16px 0 2px; font-size: 32px; }
+  h1 .slay { color: var(--crimson); }
+  .tagline { color: var(--ash); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 28px; }
+  .pitch { color: var(--bone); opacity: 0.85; font-size: 15px; line-height: 1.6; margin-bottom: 30px; }
+  .btn {
+    display: block; text-decoration: none; margin: 10px auto;
+    background: linear-gradient(180deg, var(--crimson), #8C1220);
+    color: var(--bone); font-size: 17px; letter-spacing: 1.5px;
+    padding: 16px 22px; border-radius: 14px; max-width: 340px;
+    border: 1px solid rgba(232,181,77,0.45);
+    box-shadow: 0 0 24px rgba(210,43,58,0.35);
+  }
+  .btn.alt { background: var(--surface); font-size: 13px; box-shadow: none; color: var(--ash); }
+  .version { color: var(--gold); font-size: 13px; margin: 18px 0 6px; }
+  .steps {
+    text-align: left; background: rgba(0,0,0,0.35); border-radius: 12px;
+    padding: 18px 22px; margin-top: 26px; font-size: 13.5px; line-height: 1.9; color: var(--ash);
+  }
+  .steps b { color: var(--bone); }
+  .privacy { margin-top: 20px; font-size: 12px; color: var(--venom); opacity: 0.8; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">⚔️</div>
+    <h1>PUSHUP<span class="slay">SLAYER</span></h1>
+    <div class="tagline">Ta force est la dernière arme</div>
+    <p class="pitch">
+      Ta caméra compte tes vraies pompes et chaque rep frappe des monstres :
+      gobelins, spectres, dragons. Coups critiques en pleine profondeur, combos,
+      donjons, XP et streaks quotidiens. Entièrement gratuit.
+    </p>
+    <a class="btn" href="https://github.com/Onigam/pushupslayer-releases/releases/latest/download/PushUpSlayer-arm64.apk">
+      ⬇ TÉLÉCHARGER POUR ANDROID
+    </a>
+    <a class="btn alt" href="https://github.com/Onigam/pushupslayer-releases/releases/latest/download/PushUpSlayer-arm32.apk">
+      Ancien téléphone (32 bits) ? Version alternative
+    </a>
+    <div class="version">Dernière version — voir <a style="color:var(--gold)" href="https://github.com/Onigam/pushupslayer-releases/releases">l'historique</a></div>
+    <div class="steps">
+      <b>Installation (30 secondes) :</b><br>
+      1. Télécharge l'APK ci-dessus sur ton téléphone Android.<br>
+      2. Ouvre le fichier — Android te demandera d'<b>autoriser cette source</b> : accepte.<br>
+      3. Installe, lance, et suis le tutoriel de calibration.<br>
+      4. Pose ton téléphone au sol à 1–2 m, <b>vue de profil</b>, et massacre des gobelins. 💪
+    </div>
+    <div class="privacy">🔒 100 % sur l'appareil : aucune vidéo n'est envoyée, aucun compte requis.</div>
+  </div>
+</body>
+</html>
